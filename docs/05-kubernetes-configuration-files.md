@@ -170,7 +170,7 @@ Copy the appropriate `admin.kubeconfig`, `kube-controller-manager` and `kube-sch
 
 ```
 for instance in master-1 master-2; do
-  scp admin.kubeconfig kube-controller-manager.kubeconfig kube-scheduler.kubeconfig ${instance}:~/
+  scp admin.kubeconfig kube-controller-manager.kubeconfig kube-scheduler.kubeconfig vagrant@${instance}:~/
 done
 ```
 
